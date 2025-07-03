@@ -19,6 +19,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-color: whitesmoke;
 }
 
 main {
@@ -27,8 +28,8 @@ main {
     padding: 1rem;
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(3,185px);
     gap: 1rem;
     grid-template-areas: 
     "card-1 card-2 card-2 card-3"
@@ -38,12 +39,46 @@ main {
 }
 
 .card {
-    border: 1px solid;
-    background-color: black;
-    color: white;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-1 {
+    background-color: var(--Yellow-100);
+    height: 270px;
+}
+
+.card-2 {
+    background-color: var(--Purple-500);
+}
+
+.card-3 {
+    background-color: var(--Purple-100);
+}
+
+.card-4 {
+    background-color: white;
+}
+
+.card-5 {
+    background-color: var(--Yellow-500);
+}
+
+.card-6 {
+    height: 305px;
+    position: relative;
+    top:-120px;
+    background-color: var(--Yellow-500);
+}
+
+.card-7 {
+    background-color: white;
+}
+
+.card-8 {
+    background-color: var(--Purple-500);
 }
