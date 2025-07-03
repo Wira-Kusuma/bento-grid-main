@@ -22,6 +22,8 @@ body {
     background-color: whitesmoke;
 }
 
+img {user-select: none;}
+
 main {
     width: 100%;
     height: 100vh;
@@ -39,13 +41,14 @@ main {
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
     padding: 1.2rem;
+    overflow: hidden;
 }
 
 /* card-1 */
@@ -76,31 +79,163 @@ main {
 
 .card-2 {
     background-color: var(--Purple-500);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 0.7rem;
 }
+
+.card-2 h1 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.s10x {
+    color: var(--Yellow-500);
+    font-size: 2.3rem;
+}
+
+.faster {
+    font-style: italic;
+    font-size: 2.3rem;
+}
+
+.card-2 img {
+    width: 100px;
+    margin: auto;
+}
+
+.card-2 p {
+    margin: auto;
+    font-size: 0.8rem;
+}
+
+/* card 3 */
 
 .card-3 {
     background-color: var(--Purple-100);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+
+.card-3 p {
+    font-size: 1.2rem;
+}
+
+.card-3 img {
+    width: 200px;
+}
+
+.card-3 p:last-child {
+    font-size: 0.7rem;
+}
+
+/* card 4 */
 
 .card-4 {
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
+
+.card-4 img {
+    width: 200px;
+    margin: auto;
+}
+
+.card-4 p {
+    font-size: 1.1rem;
+}
+
+/* card 5 */
 
 .card-5 {
     background-color: var(--Yellow-500);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.card-5 p {
+    font-size: 1.2rem;
+    position:relative;
+    bottom: -30px;
+}
+
+.card-5 img {
+    width: 150px;
+    position:relative;
+    bottom: -40px;
+}
+
+/* card 6 */
 
 .card-6 {
     height: 305px;
     position: relative;
     top:-120px;
     background-color: var(--Yellow-500);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
 }
+
+.card-6 p {
+    font-size: 1.4rem;
+}
+
+.card-6 img {
+    width: 180px;
+}
+
+/* card 7 */
 
 .card-7 {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
+
+.card-7 p{
+    font-size: 0.9rem;
+}
+
+.pers {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.card-7 img {
+    width: 130px;
+}
+
+/* card 8 */
 
 .card-8 {
     background-color: var(--Purple-500);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    padding: 0;
+}
+
+.card-8 img {
+    width: 200px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.card-8 p {
+    font-size: 1.4rem;
+    color: white;
 }
