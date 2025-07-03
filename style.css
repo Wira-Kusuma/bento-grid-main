@@ -239,3 +239,61 @@ main {
     font-size: 1.4rem;
     color: white;
 }
+
+@media screen and (max-width:700px) {
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: whitesmoke;
+        overflow: auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content=300px;
+        grid-template-areas:
+            "card-2"
+            "card-4"
+            "card-5"
+            "card-3"
+            "card-8"
+            "card-7"
+            "card-1"
+            "card-6";
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 1.2rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: auto;
+    }
+
+    /* Perbaiki posisi yang pakai top / absolute */
+    .card-6 {
+        top: unset;
+        height: auto;
+    }
+
+    .card-8 {
+        flex-direction: column;
+        padding: 1.2rem;
+    }
+
+    .card-8 img {
+        position: static;
+    }
+
+    /* Ukuran gambar agar proporsional */
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
