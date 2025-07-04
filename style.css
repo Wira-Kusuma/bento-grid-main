@@ -249,8 +249,11 @@ main {
     }
 
     main {
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content=300px;
+        all: unset;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         grid-template-areas:
             "card-2"
             "card-4"
@@ -264,36 +267,90 @@ main {
         padding: 1rem;
     }
 
-    .card {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        padding: 1.2rem;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        overflow: auto;
-    }
 
     /* Perbaiki posisi yang pakai top / absolute */
-    .card-6 {
-        top: unset;
-        height: auto;
+    .card {
+        all: unset;
+        display: none;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        align-self: center;
+        color: white;
+    }
+
+    .card-2 {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        background-color: var(--Purple-500);
+    }
+
+    .card-4 {
+        display: flex;
+        background-color: white;
+        gap: 1rem;
+    }
+
+    .card-4 p{
+        color: black;
+        font-weight: 600;
+    }
+
+    .card-5 {
+        display: flex;
+        background-color: var(--Yellow-500);
+        overflow: hidden;
+        color: black;
+    }
+
+    .card-3 {
+        display: flex;
+        background-color: var(--Purple-100);
+        gap: 1rem;
+        color: black;
     }
 
     .card-8 {
-        flex-direction: column;
-        padding: 1.2rem;
+        display: flex;
+        background-color: var(--Purple-500);
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .card-7 {
+        display: flex;
+        background-color: white;
+        color: black;
+        text-align: center;
+        gap: 1rem;
     }
 
-    .card-8 img {
-        position: static;
+    .card-7 .pers {
+        font-size: 3rem;
+        text-align: center;
+        align-self: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 
-    /* Ukuran gambar agar proporsional */
-    .card img {
-        max-width: 100%;
-        height: auto;
+    .card-1 {
+        display: flex;
+        background-color: var(--Yellow-100);
+        color: black;
+        gap: 1rem;
     }
 
+    .card-6 {
+        display: flex;
+        background-color: var(--Yellow-500);
+        color: black;
+        gap: 1rem;
+    }
+
+    .card-6 p {
+        font-size: 2rem;
+    }
 }
