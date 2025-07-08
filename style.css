@@ -375,3 +375,12 @@ main {
         font-size: 2rem;
     }
 }
+
+/* reduce motion preference */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
