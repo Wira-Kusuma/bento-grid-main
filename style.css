@@ -303,7 +303,7 @@ main {
     }
 
     .card-2 {
-        width: 90%;
+        max-width: 17.5rem;
         height: 200px;
         display: flex;
         background-color: var(--Purple-500);
